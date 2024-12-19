@@ -1,0 +1,172 @@
+/* CSS file for UploadDoc component - Table-like structure */
+
+/* Container for the whole form */
+#root{
+  width: 70%;
+}
+.container {
+  max-height: 700px;
+ 
+  margin: 45px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+#uploaddocid{
+  margin-left: 375px;
+}
+.rowww1{
+  margin: auto!important;
+}
+.rowww2{
+  margin: auto !important;
+}
+.rowww3{
+  margin: auto !important;
+}
+/* Header styling */
+.header {
+  font-size: 24px !important;
+  margin-bottom: 16px !important;
+  text-align: center!important;
+  font-weight: bold !important;
+}
+
+/* Form grid layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.text-field {
+  width: 100%;
+}
+
+/* Upload Section Styling */
+.upload-section {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+/* Table-like layout for document upload section */
+.upload-section .document-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Three columns: 1 for document name, 2 for actions */
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.upload-section .document-row .document-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.upload-section .document-row input[type="file"] {
+  display: none;
+}
+
+.upload-section .document-row label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.upload-section .document-row button {
+  margin-left: 74px;
+}
+
+/* Loading and Status Messages */
+.loading {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.status-message {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.status-success {
+  color: green;
+}
+
+.status-error {
+  color: red;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  background-color: lightgrey;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* View All Button */
+.view-all-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Image preview styles for modal */
+.image-previewDoc {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin: 16px auto;
+}
+
+/* Button styles for modal */
+.modal-buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.modal-content button {
+  min-width: 120px;
+}
+
+.status-message {
+  font-size: 16px;
+}
+
+.status-success {
+  color: #4caf50;
+}
+
+.status-error {
+  color: #f44336;
+}

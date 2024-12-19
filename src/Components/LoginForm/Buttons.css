@@ -1,0 +1,28 @@
+/* Center the buttons container in the middle of the page */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light background for better visibility */
+  }
+  
+  /* Style for each button */
+  .action-button {
+    margin: 10px; /* Add space between buttons */
+    padding: 15px 30px; /* Size of the button */
+    font-size: 16px; /* Button text size */
+    color: white; /* Text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for buttons */
+  .action-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
